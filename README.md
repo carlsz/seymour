@@ -1,2 +1,2 @@
 # Seymour
-A simple feed reeding app for Android
+A simple feed reading app for Android

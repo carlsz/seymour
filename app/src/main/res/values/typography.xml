@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.Seymour.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">56sp</item>
+    </style>
+
+    <style name="TextAppearance.Seymour.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

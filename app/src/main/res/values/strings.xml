@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="all_items">All Items</string>
     <string name="app_name">Seymour</string>
+    <string name="starred">Starred</string>
+    <string name="unread">Unread</string>
+
 </resources>

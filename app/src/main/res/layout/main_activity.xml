@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context="com.seymourapp.seymour.activity.main.MainActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            style="@style/Widget.MaterialComponents.Toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -22,18 +34,11 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.appbar.AppBarLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="wrap_content"
-            android:layout_height="?android:attr/actionBarSize"
-            android:fitsSystemWindows="true"
-            style="@style/Widget.MaterialComponents.Toolbar" />
-
-    </com.google.android.material.appbar.AppBarLayout>
+        android:layout_gravity="bottom"
+        style="@style/Widget.MaterialComponents.BottomNavigationView" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

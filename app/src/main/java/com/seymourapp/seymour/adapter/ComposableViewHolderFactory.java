@@ -6,6 +6,6 @@ import androidx.annotation.Nullable;
 
 public interface ComposableViewHolderFactory {
 
-    @Nullable
-    ComposableViewHolder<?> createViewHolder(ViewGroup parent, int viewType);
+  @Nullable
+  ComposableViewHolder<?> createViewHolder(ViewGroup parent, int viewType);
 }

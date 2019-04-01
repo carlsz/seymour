@@ -8,19 +8,19 @@ import timber.log.Timber;
 
 public class SeymourApplication extends DaggerApplication {
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
+  @Override
+  public void onCreate() {
+    super.onCreate();
 
-        if (BuildConfig.DEBUG) {
-            Timber.plant(new Timber.DebugTree());
-        }
+    if (BuildConfig.DEBUG) {
+      Timber.plant(new Timber.DebugTree());
     }
+  }
 
-    @Override
-    protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
-        return DaggerSeymourApplicationComponent.builder()
-                .application(this)
-                .build();
-    }
+  @Override
+  protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
+    return DaggerSeymourApplicationComponent.builder()
+        .application(this)
+        .build();
+  }
 }

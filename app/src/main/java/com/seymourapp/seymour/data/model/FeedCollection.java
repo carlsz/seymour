@@ -6,14 +6,14 @@ import java.util.List;
 
 public class FeedCollection {
 
-    public String id;
+  public String id;
 
-    @SerializedName("title")
-    public String title;
+  @SerializedName("title")
+  public String title;
 
-    @SerializedName("description")
-    public String description;
+  @SerializedName("description")
+  public String description;
 
-    @SerializedName("feeds")
-    public List<Feed> feeds;
+  @SerializedName("feeds")
+  public List<Feed> feeds;
 }

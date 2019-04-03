@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Widget.Seymour.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@null</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemIconTint">@color/selectable_item</item>
+        <item name="itemTextColor">@color/selectable_item</item>
+    </style>
+
+</resources>

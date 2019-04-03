@@ -8,13 +8,14 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        style="@style/Widget.Seymour.AppBarLayout">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="wrap_content"
             android:layout_height="?android:attr/actionBarSize"
-            style="@style/Widget.MaterialComponents.Toolbar" />
+            style="@style/Widget.Seymour.Toolbar" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -36,9 +37,9 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        style="@style/Widget.MaterialComponents.BottomNavigationView" />
+        style="@style/Widget.Seymour.BottomNavigationView" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Core color palette -->
+    <eat-comment />
+
+    <color name="seymour__palette_brown_900">#382716</color>
+    <color name="seymour__palette_brown_800">#463521</color>
+    <color name="seymour__palette_brown_700">#534229</color>
+    <color name="seymour__palette_brown_600">#614E32</color>
+    <color name="seymour__palette_brown_500">#6B5838</color>
+    <color name="seymour__palette_brown_400">#827055</color>
+    <color name="seymour__palette_brown_300">#988973</color>
+    <color name="seymour__palette_brown_200">#B7AA9A</color>
+    <color name="seymour__palette_brown_100">#D5CCC0</color>
+    <color name="seymour__palette_brown_050">#EFEBE3</color>
+
+    <color name="seymour__palette_green_900">#33691E</color>
+    <color name="seymour__palette_green_800">#558B2F</color>
+    <color name="seymour__palette_green_700">#689F38</color>
+    <color name="seymour__palette_green_600">#7CB342</color>
+    <color name="seymour__palette_green_500">#8BC34A</color>
+    <color name="seymour__palette_green_400">#9CCC65</color>
+    <color name="seymour__palette_green_300">#AED581</color>
+    <color name="seymour__palette_green_200">#C5E1A5</color>
+    <color name="seymour__palette_green_100">#DCEDC8</color>
+    <color name="seymour__palette_green_050">#F1F8E9</color>
+
+    <color name="seymour_palette_red_900">#B91A1A</color>
+
+</resources>

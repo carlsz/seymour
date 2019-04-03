@@ -1,16 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="TextAppearance.Seymour.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
-        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">sans-serif-condensed-light</item>
+        <item name="fontFamily">sans-serif-condensed-light</item>
+        <item name="android:lineSpacingExtra">-1sp</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <item name="android:textSize">56sp</item>
+    </style>
+
+    <style name="TextAppearance.Seymour.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:fontFamily">sans-serif-condensed-light</item>
+        <item name="fontFamily">sans-serif-condensed-light</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Seymour.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:fontFamily">@font/bitter_regular</item>
+        <item name="fontFamily">@font/bitter_regular</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Seymour.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Seymour.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Seymour.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Seymour.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Seymour.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
 
     <style name="TextAppearance.Seymour.Body1" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="android:lineSpacingExtra">6sp</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/bitter_regular</item>
+        <item name="fontFamily">@font/bitter_regular</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Seymour.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:fontFamily">sans-serif-condensed-light</item>
+        <item name="fontFamily">sans-serif-condensed-light</item>
+        <item name="android:lineSpacingExtra">3.5sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Seymour.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:fontWeight" tools:targetApi="o">700</item>
+        <item name="android:lineSpacingExtra">3.5sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Seymour.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.05</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.Seymour.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 
 </resources>

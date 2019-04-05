@@ -13,7 +13,7 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
             style="@style/Widget.Seymour.Toolbar" />
 
@@ -35,7 +35,17 @@
                 android:layout_height="wrap_content" />
 
             <com.seymourapp.seymour.view.listitem.ListItemView
-                android:id="@+id/listitem_view"
+                android:id="@+id/folder_listitem_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/seymour__palette_brown_050" />
+
+            <com.seymourapp.seymour.view.listitem.ListItemView
+                android:id="@+id/feed_listitem_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 

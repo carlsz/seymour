@@ -19,20 +19,26 @@ public class SubheaderView extends LinearLayout implements BindableView<Subheade
 
     public abstract CharSequence text();
 
+    public abstract int unreadCount();
+
     @AutoValue.Builder
     public abstract static class Builder {
 
       public abstract ViewData build();
 
       public abstract Builder text(CharSequence title);
+
+      public abstract Builder unreadCount(int unreadCount);
     }
 
     public static ViewData.Builder builder() {
-      return new AutoValue_SubheaderView_ViewData.Builder();
+      return new AutoValue_SubheaderView_ViewData.Builder()
+          .unreadCount(0);
     }
   }
 
   private final TextView subheadTextView;
+  private final TextView unreadCountView;
 
   public SubheaderView(Context context) {
     this(context, null);
@@ -48,11 +54,13 @@ public class SubheaderView extends LinearLayout implements BindableView<Subheade
     setOrientation(HORIZONTAL);
     LayoutInflater.from(context).inflate(R.layout.subheader, this, true);
     subheadTextView = findViewById(R.id.subheader_text_view);
+    unreadCountView = findViewById(R.id.subheader_unread_count_view);
   }
 
   @Override
   public void bindView(@Nullable ViewData viewData) {
     setSubheaderText(viewData == null ? "" : viewData.text());
+    setUnreadCount(viewData == null ? 0 : viewData.unreadCount());
   }
 
   @Override
@@ -62,5 +70,9 @@ public class SubheaderView extends LinearLayout implements BindableView<Subheade
 
   public void setSubheaderText(CharSequence text) {
     subheadTextView.setText(text);
+  }
+
+  public void setUnreadCount(int unreadCount) {
+    unreadCountView.setText(String.valueOf(unreadCount));
   }
 }

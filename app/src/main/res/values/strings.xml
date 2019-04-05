@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="action_mark_as_read">Mark as read</string>
+    <string name="action_add_subscription">Add subscription</string>
+    <string name="action_settings">Settings</string>
     <string name="all_items">All Items</string>
     <string name="app_name">Seymour</string>
+    <string name="mark_as_read">Mark as read</string>
+    <string name="settings">Settings</string>
     <string name="starred">Starred</string>
     <string name="unread">Unread</string>
 

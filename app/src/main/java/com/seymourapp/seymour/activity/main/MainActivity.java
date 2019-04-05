@@ -1,6 +1,8 @@
 package com.seymourapp.seymour.activity.main;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -33,6 +35,27 @@ public class MainActivity extends DaggerAppCompatActivity implements
   }
 
   @Override
+  public boolean onCreateOptionsMenu(Menu menu) {
+    MenuInflater inflater = getMenuInflater();
+    inflater.inflate(R.menu.main_toolbar_menu, menu);
+    return true;
+  }
+
+  @Override
+  public boolean onOptionsItemSelected(MenuItem item) {
+    switch (item.getItemId()) {
+      case R.id.action_add_subscription:
+        return true;
+      case R.id.action_mark_as_read:
+        return true;
+      case R.id.action_settings:
+        return true;
+      default:
+        return super.onOptionsItemSelected(item);
+    }
+  }
+
+  @Override
   protected void onPostCreate(@Nullable Bundle savedInstanceState) {
     super.onPostCreate(savedInstanceState);
 
@@ -44,15 +67,27 @@ public class MainActivity extends DaggerAppCompatActivity implements
     bottomNav.setOnNavigationItemSelectedListener(this);
     bottomNav.setSelectedItemId(R.id.action_unread);
 
-    ListItemView listItemView = findViewById(R.id.listitem_view);
-    ListItemView.ViewData.Builder builder = ListItemView.ViewData.builder();
-    builder.title("This is a test of the emergency broadcast system").unreadCount(101);
-    listItemView.bindView(builder.build());
-
     SubheaderView subheaderView = findViewById(R.id.subheader_view);
-    SubheaderView.ViewData.Builder subheaderViewData = SubheaderView.ViewData.builder();
-    subheaderViewData.text("Today");
-    subheaderView.bindView(subheaderViewData.build());
+    subheaderView.bindView(
+        SubheaderView.ViewData.builder()
+            .text("Today")
+            .unreadCount(101)
+            .build());
+
+    ListItemView folderListItemView = findViewById(R.id.folder_listitem_view);
+    folderListItemView.bindView(
+        ListItemView.ViewData.builder()
+            .icon(R.drawable.ic_folder_open_black_24px)
+            .title("Hockey")
+            .unreadCount(101)
+            .build());
+
+    ListItemView feedListItemView = findViewById(R.id.feed_listitem_view);
+    feedListItemView.bindView(
+        ListItemView.ViewData.builder()
+            .title("The Hockey Writers")
+            .unreadCount(53)
+            .build());
   }
 
   @Override

@@ -44,8 +44,8 @@
     </style>
 
     <style name="TextAppearance.Seymour.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
-        <item name="android:fontFamily">sans-serif-condensed</item>
-        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:fontFamily">@font/bitter_regular</item>
+        <item name="fontFamily">@font/bitter_regular</item>
         <item name="android:lineSpacingExtra">5sp</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
@@ -58,8 +58,8 @@
     </style>
 
     <style name="TextAppearance.Seymour.Body1" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="android:fontFamily">@font/bitter_regular</item>
-        <item name="fontFamily">@font/bitter_regular</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="fontFamily">sans-serif-condensed</item>
         <item name="android:lineSpacingExtra">5sp</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>

@@ -29,10 +29,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <com.seymourapp.seymour.view.subheader.SubheaderView
+                android:id="@+id/subheader_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
             <com.seymourapp.seymour.view.listitem.ListItemView
                 android:id="@+id/listitem_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/seymour__palette_brown_050" />
 
         </LinearLayout>
 

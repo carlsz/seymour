@@ -23,7 +23,7 @@
         android:gravity="center_vertical"
         android:maxLines="1"
         android:ellipsize="end"
-        style="@style/TextAppearance.Seymour.Subtitle1" />
+        style="@style/TextAppearance.Seymour.Body1" />
 
     <TextView
         android:id="@+id/listitem_unread_count_view"
@@ -33,6 +33,6 @@
         android:layout_marginStart="16dp"
         android:layout_alignBaseline="@id/listitem_title_view"
         android:gravity="center_vertical"
-        style="@style/TextAppearance.Seymour.Subtitle2" />
+        style="@style/TextAppearance.Seymour.Body2" />
 
 </merge>

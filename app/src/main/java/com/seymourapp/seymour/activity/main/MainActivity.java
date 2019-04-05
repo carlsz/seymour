@@ -6,6 +6,7 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.seymourapp.seymour.R;
 import com.seymourapp.seymour.view.listitem.ListItemView;
+import com.seymourapp.seymour.view.subheader.SubheaderView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -47,6 +48,11 @@ public class MainActivity extends DaggerAppCompatActivity implements
     ListItemView.ViewData.Builder builder = ListItemView.ViewData.builder();
     builder.title("This is a test of the emergency broadcast system").unreadCount(101);
     listItemView.bindView(builder.build());
+
+    SubheaderView subheaderView = findViewById(R.id.subheader_view);
+    SubheaderView.ViewData.Builder subheaderViewData = SubheaderView.ViewData.builder();
+    subheaderViewData.text("Today");
+    subheaderView.bindView(subheaderViewData.build());
   }
 
   @Override

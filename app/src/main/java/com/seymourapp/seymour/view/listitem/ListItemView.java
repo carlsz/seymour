@@ -16,11 +16,42 @@ import androidx.annotation.Nullable;
 
 public class ListItemView extends LinearLayout implements BindableView<ListItemView.ViewData> {
 
+  @Override
+  public void bindView(@Nullable ViewData viewData) {
+    setIcon(viewData == null ? R.drawable.ic_rss_feed_black_24px : viewData.icon());
+    setTitle(viewData == null ? "" : viewData.title());
+    setUnreadCount(viewData == null ? 0 : viewData.unreadCount());
+    setOnClickListener(viewData == null ? null : viewData.onClickListener());
+  }
+
+  private final ImageView iconView;
+  private final TextView titleView;
+  private final TextView unreadCountView;
+
+  public ListItemView(Context context) {
+    this(context, null);
+  }
+
+  public ListItemView(Context context, @Nullable AttributeSet attrs) {
+    this(context, attrs, 0);
+  }
+
+  public ListItemView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    super(context, attrs, defStyleAttr);
+
+    setOrientation(HORIZONTAL);
+    setFocusable(true);
+    LayoutInflater.from(context).inflate(R.layout.listitem, this, true);
+
+    iconView = findViewById(R.id.listitem_icon_view);
+    titleView = findViewById(R.id.listitem_title_view);
+    unreadCountView = findViewById(R.id.listitem_unread_count_view);
+  }
+
   @AutoValue
   public abstract static class ViewData implements com.seymourapp.seymour.view.bindable.ViewData {
 
-    public abstract @DrawableRes
-    int icon();
+    public abstract @DrawableRes int icon();
 
     public abstract CharSequence title();
 
@@ -48,38 +79,6 @@ public class ListItemView extends LinearLayout implements BindableView<ListItemV
           .icon(R.drawable.ic_rss_feed_black_24px)
           .unreadCount(0);
     }
-  }
-
-  private final ImageView iconView;
-  private final TextView titleView;
-  private final TextView unreadCountView;
-
-  public ListItemView(Context context) {
-    this(context, null);
-  }
-
-  public ListItemView(Context context, @Nullable AttributeSet attrs) {
-    this(context, attrs, 0);
-  }
-
-  public ListItemView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-    super(context, attrs, defStyleAttr);
-
-    setOrientation(HORIZONTAL);
-    setFocusable(true);
-    setBaselineAligned(false);
-    LayoutInflater.from(context).inflate(R.layout.listitem, this, true);
-
-    iconView = findViewById(R.id.listitem_icon_view);
-    titleView = findViewById(R.id.listitem_title_view);
-    unreadCountView = findViewById(R.id.listitem_unread_count_view);
-  }
-
-  @Override
-  public void bindView(@Nullable ViewData viewData) {
-    setIcon(viewData == null ? R.drawable.ic_rss_feed_black_24px : viewData.icon());
-    setTitle(viewData == null ? "" : viewData.title());
-    setUnreadCount(viewData == null ? 0 : viewData.unreadCount());
   }
 
   @Override

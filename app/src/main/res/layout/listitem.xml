@@ -5,12 +5,12 @@
 
     <ImageView
         android:id="@+id/listitem_icon_view"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
         android:layout_marginBottom="18dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="20dp"
         android:contentDescription="@string/app_name"
         android:tint="@color/seymour__palette_brown_500"
         android:scaleType="centerCrop" />
@@ -20,9 +20,9 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
+        android:ellipsize="end"
         android:gravity="center_vertical"
         android:maxLines="1"
-        android:ellipsize="end"
         style="@style/TextAppearance.Seymour.Body1" />
 
     <TextView

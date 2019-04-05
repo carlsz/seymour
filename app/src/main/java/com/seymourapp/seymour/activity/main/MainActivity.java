@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.seymourapp.seymour.R;
+import com.seymourapp.seymour.view.feeditem.FeedItemView;
 import com.seymourapp.seymour.view.listitem.ListItemView;
 import com.seymourapp.seymour.view.subheader.SubheaderView;
 
@@ -15,9 +17,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import dagger.android.ContributesAndroidInjector;
 import dagger.android.support.DaggerAppCompatActivity;
+import timber.log.Timber;
 
 public class MainActivity extends DaggerAppCompatActivity implements
-    BottomNavigationView.OnNavigationItemSelectedListener {
+    BottomNavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
   private Toolbar toolbar;
 
@@ -80,6 +83,7 @@ public class MainActivity extends DaggerAppCompatActivity implements
             .icon(R.drawable.ic_folder_open_black_24px)
             .title("Hockey")
             .unreadCount(101)
+            .onClickListener(this)
             .build());
 
     ListItemView feedListItemView = findViewById(R.id.feed_listitem_view);
@@ -87,7 +91,23 @@ public class MainActivity extends DaggerAppCompatActivity implements
         ListItemView.ViewData.builder()
             .title("The Hockey Writers")
             .unreadCount(53)
+            .onClickListener(this)
             .build());
+
+    FeedItemView feedItemView = findViewById(R.id.feeditem_view);
+    feedItemView.bindView(
+        FeedItemView.ViewData.builder()
+            .feedTitle("The Hockey Writers")
+            .title("Joe Thornton's Legacy Season")
+            .summary("Less than an hour's drive from San Jose live the slender, giant coastal" +
+                " redwood trees.")
+            .onClickListener(this)
+            .build());
+  }
+
+  @Override
+  public void onClick(View view) {
+    Timber.d("onClick");
   }
 
   @Override

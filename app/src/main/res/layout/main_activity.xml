@@ -8,14 +8,13 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Widget.Seymour.AppBarLayout">
+        android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
-            style="@style/Widget.Seymour.Toolbar" />
+            style="?attr/toolbarStyle"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -42,7 +41,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/seymour__palette_brown_050" />
+                android:background="?attr/dividerHorizontal" />
 
             <com.seymourapp.seymour.view.listitem.ListItemView
                 android:id="@+id/feed_listitem_view"
@@ -52,7 +51,17 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/seymour__palette_brown_050" />
+                android:background="?attr/dividerHorizontal" />
+
+            <com.seymourapp.seymour.view.feeditem.FeedItemView
+                android:id="@+id/feeditem_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/dividerHorizontal" />
 
         </LinearLayout>
 
@@ -64,6 +73,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
-        style="@style/Widget.Seymour.BottomNavigationView" />
+        style="?attr/bottomNavigationStyle" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

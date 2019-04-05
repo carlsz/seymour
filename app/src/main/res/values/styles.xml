@@ -11,10 +11,14 @@
         <item name="colorSecondary">@color/seymour__palette_brown_800</item>
         <item name="colorSecondaryVariant">@color/seymour__palette_brown_900</item>
         <item name="colorAccent">@color/seymour__palette_brown_800</item>
-        <item name="colorError">@color/seymour_palette_red_900</item>
+        <item name="colorControlNormal">@color/seymour__palette_brown_800</item>
+        <item name="colorError">@color/seymour__palette_red_900</item>
         <item name="colorSurface">@color/background_color_light</item>
-        <item name="colorOnSurface">@color/seymour__palette_brown_800</item>
+        <item name="colorOnSurface">@color/seymour__palette_brown_500</item>
+        <item name="dividerVertical">@color/divider_color_light</item>
+        <item name="dividerHorizontal">@color/divider_color_light</item>
         <item name="android:colorBackground">@color/background_color_light</item>
+        <item name="android:listDivider">@color/divider_color_light</item>
         <item name="android:windowBackground">@color/background_color_light</item>
 
         <item name="android:navigationBarColor" tools:targetApi="lollipop">
@@ -49,7 +53,6 @@
         <!-- Widget styles -->
         <eat-comment />
 
-        <item name="actionBarStyle">@style/Widget.Seymour.Toolbar</item>
         <item name="bottomNavigationStyle">@style/Widget.Seymour.BottomNavigationView</item>
         <item name="tabStyle">@style/Widget.Seymour.TabLayout</item>
         <item name="toolbarStyle">@style/Widget.Seymour.Toolbar</item>

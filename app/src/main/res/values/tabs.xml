@@ -2,7 +2,7 @@
 <resources>
 
     <style name="Widget.Seymour.TabLayout" parent="Widget.MaterialComponents.TabLayout">
-        <item name="tabIndicatorColor">@color/seymour_palette_red_900</item>
+        <item name="tabIndicatorColor">@color/seymour__palette_red_900</item>
     </style>
 
 </resources>

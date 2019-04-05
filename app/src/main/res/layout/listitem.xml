@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <ImageView
+        android:id="@+id/listitem_icon_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/app_name"
+        android:tint="@color/seymour__palette_brown_500"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/listitem_title_view"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:ellipsize="end"
+        style="@style/TextAppearance.Seymour.Subtitle1" />
+
+    <TextView
+        android:id="@+id/listitem_unread_count_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignBaseline="@id/listitem_title_view"
+        android:gravity="center_vertical"
+        style="@style/TextAppearance.Seymour.Subtitle2" />
+
+</merge>

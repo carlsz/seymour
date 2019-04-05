@@ -5,6 +5,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.seymourapp.seymour.R;
+import com.seymourapp.seymour.view.listitem.ListItemView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -41,6 +42,11 @@ public class MainActivity extends DaggerAppCompatActivity implements
     bottomNav.inflateMenu(R.menu.main_bottom_nav_menu);
     bottomNav.setOnNavigationItemSelectedListener(this);
     bottomNav.setSelectedItemId(R.id.action_unread);
+
+    ListItemView listItemView = findViewById(R.id.listitem_view);
+    ListItemView.ViewData.Builder builder = ListItemView.ViewData.builder();
+    builder.title("This is a test of the emergency broadcast system").unreadCount(101);
+    listItemView.bindView(builder.build());
   }
 
   @Override
